@@ -1,0 +1,12 @@
+.note-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .no-notes {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+  
