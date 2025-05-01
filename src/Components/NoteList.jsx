@@ -1,9 +1,9 @@
 import React from "react";
-import NoteItem from "./NoteItem.jsx"
-import "./NoteList.css";
-
+import NoteItem from "./NoteItem.jsx";
+import "./noteList.css";
 
 const NoteList = ({ notes, onDelete }) => {
+  // Check if there are no notes to display
   if (notes.length === 0) return <p className="no-notes">No notes yet.</p>;
 
   return (

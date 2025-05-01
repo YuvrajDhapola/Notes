@@ -1,8 +1,8 @@
 import React from "react";
-import "./NoteItem.css"; // Import the CSS file for styling
-
+import "./noteItem.css";
 
 const NoteItem = ({ note, onDelete }) => {
+  // Display the note title and content, and provides delete button
   return (
     <div className="note-item">
       <h3>{note.title}</h3>

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "./NoteForm.css"; // Import your CSS file for styling
+import "./noteForm.css";
 
-
+// Local state to manage the form inputs
 const NoteForm = ({ onAddNote }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
+  // Handeling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim() || !content.trim()) return;
